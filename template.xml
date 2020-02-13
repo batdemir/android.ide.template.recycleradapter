@@ -1,0 +1,56 @@
+<template 
+    format = "4"
+    revision = "1"
+    name = "Recycler Adapter"
+    description = "Creates a new recycler adapter class adapter and layout">
+
+    <category value = "Other" />
+
+    <parameter 
+        id = "className"
+        name = "Adapter Name"
+        type = "string"
+        constraints = "class|unique|nonempty"
+        default = "Main"
+        help = "The name of the adapter class to create" />
+
+    <parameter 
+        id = "layoutName"
+        name = "Layout Item Name"
+        type = "string"
+        constraints = "layout|unique|nonempty" 
+        default = "item_name"
+        help = "The name of the resource layout item to create" />
+
+    <parameter 
+        id = "packageName"
+        name = "Package"
+        type = "string"
+        constraints = "package"
+        default = "com.batdemir.example.main" />
+
+    <parameter 
+        id = "modelName"
+        name = "Item Model Name"
+        type = "string"
+        constraints = "class|unique|nonempty" 
+        default = "MainItem"
+        help = "The name of the model item to implement" />
+
+    <parameter 
+        id = "modelPackageName"
+        name = "Model Package"
+        type = "string"
+        constraints = "package"
+        default = "com.batdemir.example.MainItem" />
+
+    <parameter 
+        id = "rootPackageName"
+        name = "Project Package"
+        type = "string"
+        constraints = "package"
+        default = "com.batdemir.example" />
+
+    <execute file = "recipe.xml.ftl" />
+    
+</template>
