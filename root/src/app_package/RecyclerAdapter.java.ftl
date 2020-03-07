@@ -30,7 +30,7 @@ public class Adapter${className} extends RecyclerView.Adapter {
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding = DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.${layoutName}, parent, false);
+        binding = Item${className}Binding.inflate(LayoutInflater.from(context), parent, false);
         return new MViewHolder(binding);
     }
 
